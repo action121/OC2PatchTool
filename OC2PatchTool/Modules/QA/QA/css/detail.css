@@ -1,0 +1,409 @@
+.note .postExpand {
+    width: 65%;
+    margin-right:50px;
+}
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    color: #333;
+    background: #f8f8f8;
+    /*white-space: pre-line;*/
+}
+
+.hljs-comment, .hljs-quote {
+    color: #998;
+    font-style: italic
+}
+
+.hljs-keyword, .hljs-selector-tag, .hljs-subst {
+    color: #333;
+    font-weight: bold
+}
+
+.hljs-number, .hljs-literal, .hljs-variable, .hljs-template-variable,
+.hljs-tag .hljs-attr {
+    color: #008080
+}
+
+.hljs-string, .hljs-doctag {
+    color: #d14
+}
+
+.hljs-title, .hljs-section, .hljs-selector-id {
+    color: #900;
+    font-weight: bold
+}
+
+.hljs-subst {
+    font-weight: normal
+}
+
+.hljs-type, .hljs-class .hljs-title {
+    color: #458;
+    font-weight: bold
+}
+
+.hljs-tag, .hljs-name, .hljs-attribute {
+    color: #000080;
+    font-weight: normal
+}
+
+.hljs-regexp, .hljs-link {
+    color: #009926
+}
+
+.hljs-symbol, .hljs-bullet {
+    color: #990073
+}
+
+.hljs-built_in, .hljs-builtin-name {
+    color: #0086b3
+}
+
+.hljs-meta {
+    color: #999;
+    font-weight: bold
+}
+
+.hljs-deletion {
+    background: #fdd
+}
+
+.hljs-addition {
+    background: #dfd
+}
+
+.hljs-emphasis {
+    font-style: italic
+}
+
+.hljs-strong {
+    font-weight: bold
+}
+
+.main {
+    width: 75%;
+    font-size: 15px;
+    color: #4D494E;
+    float: right
+}
+
+aside {
+    width: 20%;
+    margin-left: 20px;
+    float: left
+}
+
+h1 {
+    padding: 10px 0;
+    font-size: 30px;
+    /*border-bottom: 1px solid #aaa*/
+}
+
+h1 a {
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 0.8em;
+    color: #3E3B3F
+}
+
+article {
+    padding-top: 20px
+}
+
+article .lead {
+    background: #f1eeea;
+    padding: 10px 8px;
+    font-style: italic;
+    margin-bottom: 10px
+}
+
+article h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px
+}
+
+article h4 {
+    margin-top: 10px;
+    font-size: 17px
+}
+
+article img {
+    display: block;
+    max-width: 76%;
+    margin: 0 auto
+}
+
+article p {
+    padding: 8px 0;
+    line-height: 23px
+}
+
+article p code {
+    padding: 3px 4px;
+    color: #c7254e;
+    background-color: #F9F9FD;
+    margin: 0 2px;
+    font-family: consolas, courier new;
+    font-size: 96%;
+    word-wrap: break-word;
+    word-break: normal
+}
+
+article blockquote {
+    background: #f5f5f5;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #ccc;
+    padding: 6px 8px;
+    font-size: 14px;
+    margin-bottom: 22px
+}
+
+article blockquote p {
+    padding: 0
+}
+
+article ul {
+    margin-left: 24px;
+    list-style: disc
+}
+
+article ul ul {
+    list-style: circle
+}
+
+article ul li p {
+    padding: 0
+}
+
+article ol {
+    list-style: decimal;
+    margin-left: 38px
+}
+
+article ol li {
+    line-height: 30px
+}
+
+article ol p {
+    padding: 0
+}
+
+article pre {
+    display: block;
+    overflow: hidden;
+    padding: .5em;
+    color: #333;
+    background: #f8f8f8;
+    -webkit-text-size-adjust: none;
+    margin-bottom: 22px;
+    font-size: 13px
+}
+
+article pre code {
+    overflow: auto;
+    max-height: 500px;
+    position: relative
+}
+
+article pre code:before {
+    position: absolute;
+    margin-top: -10px;
+    right: 0;
+    color: #ccc;
+    text-align: right;
+    font-size: 0.75em;
+    padding: 5px 10px 0;
+    line-height: 15px;
+    height: 15px;
+    font-weight: 600
+}
+
+article pre code.javascript:before {
+    /*content: 'JS'*/
+}
+
+article pre code.html:before {
+    content: 'HTML'
+}
+
+article pre code.bash:before {
+    content: 'Shell'
+}
+
+article pre code.css:before {
+    content: 'CSS'
+}
+
+article table {
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    padding: 0;
+    border-collapse: collapse;
+    margin: 10px 0;
+    max-width: 100%;
+    width: 100%
+}
+
+article table td, article table th {
+    height: 30px;
+    font-size: 15px;
+    padding: 1px 1px 1px 8px;
+    border-right: 1px solid #eee
+}
+
+article table td:last-child, article table th:last-child {
+    border-right: 0
+}
+
+article table tr {
+    border-bottom: 1px solid #eee
+}
+
+article table tr:nth-child(odd) {
+    background: #fbfbfb
+}
+
+article table thead tr {
+    background-color: #fff !important
+}
+
+aside {
+    padding-top: 30px;
+    font-size: 16px
+}
+
+aside h4 {
+    margin-top: 20px;
+    color: #4D494E
+}
+
+aside li {
+    float: left;
+    margin-right: 8px
+}
+
+aside .wechat p {
+    text-align: center;
+    font-size: 14px
+}
+
+.recommend {
+    margin-top: 30px
+}
+
+.recommend h2 {
+    font-size: 20px;
+    margin-bottom: 3px
+}
+
+.recommend li {
+    float: left;
+    width: 49%
+}
+
+.recommend li span {
+    font-size: 13px
+}
+
+.sidenav {
+    width: 260px;
+    position: fixed;
+    left: 20px;
+    top: 50px;
+    display: block;
+}
+
+.sidenav .catelog {
+    padding: 8px;
+    background: #fcfcfc;
+    box-shadow: 1px 1px 1px 1px #aaa;
+    z-index: 2
+}
+
+.sidenav .nav_switch {
+    cursor: pointer;
+    display: block;
+    height: 45px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    position: relative;
+    width: 45px;
+    margin-top: 7px;
+    outline: 0;
+    background: url(/static/img/sideToolbar.gif) no-repeat
+}
+
+.sidenav .ceng_0 {
+    margin-left: 0
+}
+
+.sidenav .nav_switch_active {
+    background-position: -104px 0
+}
+
+.sidenav li {
+    position: relative;
+    float: none;
+    line-height: 1.4
+}
+
+.sidenav .dot {
+    background: url(/static/img/sideToolbar.gif) 0 -222px no-repeat;
+    height: 10px;
+    left: -11px;
+    line-height: 12px;
+    overflow: hidden;
+    position: absolute;
+    top: 7px;
+    width: 6px
+}
+
+.sidenav .active .dot, .sidenav .catelog a:hover .dot {
+    background-position: 0 -245px
+}
+
+.sidenav .ceng_1 {
+    margin-left: 20px
+}
+
+.sidenav .ceng_2 {
+    margin-left: 40px
+}
+
+.sidenav .ceng_3 {
+    margin-left: 60px
+}
+
+.sidenav .catelog a {
+    text-decoration: none;
+    color: #555;
+    display: block;
+    padding: 3px
+}
+
+.ss_link {
+    background: #f5f5f5;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #ccc;
+    margin-top: 36px;
+    padding: 6px 8px;
+    font-size: 14px
+}
+
+.wechat_pub {
+    background-color: rgba(0, 0, 0, 0.05);
+    margin-top: 6px;
+    text-align: center;
+    display: none
+}
+
+.wechat_pub img {
+    width: 200px;
+    height: 200px
+}
+
+
