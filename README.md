@@ -21,10 +21,14 @@
 
 
 # 不支持
-预编译相关
-编译器内置函数以及属性__attribute__等
-a[x], {x,y,z}, a->x
-id a = ( identifier )object; 类型转换. 但支持id a = (identifier *)object;
+
+1. 预编译相关
+
+2. 编译器内置函数以及属性__attribute__等
+
+3. a[x], {x,y,z}, a->x
+
+4. id a = ( identifier )object; 类型转换. 但支持id a = (identifier *)object;
 
 # 热修引擎
 
