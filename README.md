@@ -18,3 +18,19 @@
 
 4、提供帮助菜单
 路径：菜单->帮助
+
+
+# 不支持
+预编译相关
+编译器内置函数以及属性__attribute__等
+a[x], {x,y,z}, a->x
+id a = ( identifier )object; 类型转换. 但支持id a = (identifier *)object;
+
+# 热修引擎
+
+[地址](https://github.com/YPLiang19/Mango)
+
+# 感谢
+
+[地址](https://github.com/SilverFruity/oc2mango)
+
