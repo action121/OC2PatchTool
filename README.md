@@ -67,17 +67,17 @@ id a = ( identifier )object; 类型转换. 但支持id a = (identifier *)object;
 
 
 ```
-macOS 10.11
+macOS 12.0
 ```
 
 ## Q2、APP正确的安装姿势？
 
 
 ```
-双击MBCommonCryptor.app即可运行。
+双击OC2PatchTool.app即可运行。
 ```
 
-## Q3、打不开“MBCommonCryptor.app”，因为它来自身份不明的开发者
+## Q3、打不开“OC2PatchTool.app”，因为它来自身份不明的开发者
 
 方案1.系统偏好设置>>安全与隐私>>允许安装未知来源
 
