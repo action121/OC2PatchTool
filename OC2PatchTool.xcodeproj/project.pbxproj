@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -61,7 +61,7 @@
 		5E8545BA25878A44000B4568 /* NSTextView+line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextView+line.h"; sourceTree = "<group>"; };
 		5E8545BB25878A44000B4568 /* LineNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineNumberView.m; sourceTree = "<group>"; };
 		5E8545BC25878A44000B4568 /* NSTextView+line.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextView+line.m"; sourceTree = "<group>"; };
-		5E8545BD25878A44000B4568 /* MBCommonCryptor.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = MBCommonCryptor.entitlements; sourceTree = "<group>"; };
+		5E8545BD25878A44000B4568 /* OC2PatchTool.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = OC2PatchTool.entitlements; sourceTree = "<group>"; };
 		5E8545BE25878A44000B4568 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E8545C025878A44000B4568 /* NSString+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URL.m"; sourceTree = "<group>"; };
 		5E8545C125878A44000B4568 /* MBPatchMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBPatchMD5.m; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 				5E8545E625878A44000B4568 /* main.m */,
 				5E85460F25878A44000B4568 /* Info.plist */,
 				5E85469525887F12000B4568 /* MainMenu.xib */,
-				5E8545BD25878A44000B4568 /* MBCommonCryptor.entitlements */,
+				5E8545BD25878A44000B4568 /* OC2PatchTool.entitlements */,
 			);
 			path = OC2PatchTool;
 			sourceTree = "<group>";
@@ -586,27 +586,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MBCommonCryptor/MBCommonCryptor.entitlements;
+				CODE_SIGN_ENTITLEMENTS = OC2PatchTool/OC2PatchTool.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				"EXCLUDED_ARCHS[sdk=*]" = arm64;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/MBCommonCryptor/lib",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_INPUT_FILETYPE = sourcecode.c.objc;
 				INFOPLIST_FILE = "$(SRCROOT)/OC2PatchTool/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				OTHER_LDFLAGS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/MBCommonCryptor/MangoFix/libffi",
-					"$(PROJECT_DIR)/OC2PatchTool/Foundation/MangoFix/libffi",
+					"-ld_classic",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = ming.MBCommonCryptor;
+				PRODUCT_BUNDLE_IDENTIFIER = ming.OC2PatchTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -617,27 +615,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MBCommonCryptor/MBCommonCryptor.entitlements;
+				CODE_SIGN_ENTITLEMENTS = OC2PatchTool/OC2PatchTool.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				"EXCLUDED_ARCHS[sdk=*]" = arm64;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/MBCommonCryptor/lib",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_INPUT_FILETYPE = sourcecode.c.objc;
 				INFOPLIST_FILE = "$(SRCROOT)/OC2PatchTool/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				OTHER_LDFLAGS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/MBCommonCryptor/MangoFix/libffi",
-					"$(PROJECT_DIR)/OC2PatchTool/Foundation/MangoFix/libffi",
+					"-ld_classic",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = ming.MBCommonCryptor;
+				PRODUCT_BUNDLE_IDENTIFIER = ming.OC2PatchTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

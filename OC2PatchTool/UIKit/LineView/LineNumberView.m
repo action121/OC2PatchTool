@@ -30,6 +30,11 @@
         _warningLines = [[NSMutableDictionary alloc] initWithCapacity:0];
         _standardColor = [NSColor textColor];
         _warningColor = [NSColor redColor];
+        
+        // 系统修改了clipsToBounds的默认值
+        /* Defaults to NO on macOS 14 and later. Defaults to YES on previous releases. Note some classes (like NSClipView) set their own default values differently than NSView itself.
+         */
+        self.clipsToBounds = YES;
     }
     return self;
 }
@@ -228,13 +233,13 @@
     NSGraphicsContext *nsctx = [NSGraphicsContext currentContext];
     [nsctx saveGraphicsState];
     
-    [[NSColor controlHighlightColor] set];
+    [[NSColor controlBackgroundColor] set];
     [NSBezierPath fillRect:rect];
     
     [nsctx setShouldAntialias:NO];
-    [[NSColor controlShadowColor] set];
+    [[NSColor separatorColor] set];
     
-    CGContextRef context = (CGContextRef)[nsctx graphicsPort];
+    CGContextRef context = (CGContextRef)[nsctx CGContext];
     CGContextBeginPath(context);
     CGContextMoveToPoint(context,NSWidth(rect)-1, 0);
     CGContextAddLineToPoint(context,NSWidth(rect)-1,NSHeight([self frame]));
